@@ -1,4 +1,4 @@
-# Digital FOV (Field Of Vision)
+# Digital FOV (Field of vision)
 ## Symetrical 2D FOV for tile-based games
 
 [Image demo 1](https://i.sli.mg/mH3V6S.png)
