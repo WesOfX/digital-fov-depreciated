@@ -24,7 +24,7 @@ map2<bool, 50, 50> opacity;
 // Create an fov map from the opacity map using 31, 17 a the vantage point
 fov<50, 50> my_field_of_vision(opacity, 31, 17);
 
-// Check if the point at 22, 11 is visible (from 31, 17)
+// Check if 22, 11 is visible (from 31, 17)
 if(field_of_vision.at(22, 11)){
     // It's visible!
 }
