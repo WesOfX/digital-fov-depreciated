@@ -1,6 +1,9 @@
 # Digital FOV
 ## Symetrical 2D FOV for tile-based games
 
+[Image demo 1](https://i.sli.mg/mH3V6S.png)
+[Image demo 2](https://i.sli.mg/ObAX5M.png)
+[Image demo 3](https://i.sli.mg/iTNH4Y.png)
 [Animated gif demo](https://i.sli.mg/ish0PS.gif)
 
 ### How it works
