@@ -8,7 +8,11 @@ template<std::size_t width, std::size_t height>
 class fov: public map2<bool, width, height>{
 	/* A digital line is a boolear array where
 	 * false is lateral and true is diagonal */
-	struct digital_line{
+	class digital_line{
+		/* The boolean array to represent the digital line's path
+		 * false is lateral and true is diagonal */
+		std::array<bool, std::max(width, height)> path;
+	public:
 		/* Creates a digital line
 		 * Using a different eps gives you a different line
 		 * The number of unique lines that exist is equal to word_length */
@@ -32,13 +36,9 @@ class fov: public map2<bool, width, height>{
 		}
 
 		// Return a boolean from the line
-		auto at(std::size_t i){
+		auto& at(std::size_t i){
 			return path.at(i);
 		}
-
-		/* The boolean array to represent the digital line's path
-		 * false is lateral and true is diagonal */
-		std::array<bool, std::max(width, height)> path;
 	};
 public:
 	// Construct a field-of-vision map using an opacity map and a position
@@ -89,8 +89,8 @@ public:
 				}
 
 				/* Determine the octant to update x and y
-				 * TODO This needs to be optimized because every point
-				 * on a line is in the same octant, yet it's checked
+				 * TODO This should probably be optimized because every
+				 * point on a line is in the same octant, yet it's checked
 				 * for every point here */
 				if(x_offset > 0){ // East
 					if(y_offset > 0){ // Southeast
