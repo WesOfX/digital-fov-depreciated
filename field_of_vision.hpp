@@ -14,14 +14,14 @@ public:
 		// For every point on the field-of-vision map
 		for(std::size_t collum = 0; collum < width; collum++){
 			for(std::size_t row = 0; row < height; row++){
-				field_of_vision::at(collum, row) = los(opacity, x, y, collum, row);
+				field_of_vision::at(collum, row) = line_of_sight(opacity, x, y, collum, row);
 			}
 		}
 	}
 
 	/* Returns true if an unobstructed line-of-sight exists
 	 * between the two points on the opacity map */
-	static constexpr bool los(
+	static constexpr bool line_of_sight(
 		map2<bool, width, height> opacity,
 		std::size_t x0,
 		std::size_t y0,
