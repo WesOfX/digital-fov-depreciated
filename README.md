@@ -3,7 +3,7 @@
 
 [Image demo](https://i.sli.mg/mH3V6S.png)
 
-[Animated gif demo](https://i.sli.mg/ish0PS.gif)
+[Animated gif demo](https://i.sli.mg/6El3IC.gif)
 
 ### How it works
 Digital FOV works by using digital lines to check if line-of-sight exists between two points. Using a modified version of Brensenham's line algorithm, Digital FOV checks all possible digital lines between two points and if any unobstructed lines exist, there is line-of-sight.
